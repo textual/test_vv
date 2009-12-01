@@ -5,3 +5,10 @@
 #   
 #   cities = City.create([{ :name => 'Chicago' }, { :name => 'Copenhagen' }])
 #   Major.create(:name => 'Daley', :city => cities.first)
+
+
+Artist.create(:name => "Cascada")
+Artist.create(:name => "Britney Spears")
+Artist.create(:name => "Wolfgang Amadeus Mozart")
+Artist.create(:name => "Elvis Presley")
+Artist.create(:name => "Aretha Franklin")
