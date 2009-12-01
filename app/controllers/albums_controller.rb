@@ -1,18 +1,18 @@
 class AlbumsController < ApplicationController
   def index
-    @albums = Albums.all
+    @albums = Album.all
   end
   
   def show
-    @albums = Albums.find(params[:id])
+    @albums = Album.find(params[:id])
   end
   
   def new
-    @albums = Albums.new
+    @albums = Album.new
   end
   
   def create
-    @albums = Albums.new(params[:albums])
+    @albums = Album.new(params[:albums])
     if @albums.save
       flash[:notice] = "Successfully created albums."
       redirect_to @albums
@@ -22,11 +22,11 @@ class AlbumsController < ApplicationController
   end
   
   def edit
-    @albums = Albums.find(params[:id])
+    @albums = Album.find(params[:id])
   end
   
   def update
-    @albums = Albums.find(params[:id])
+    @albums = Album.find(params[:id])
     if @albums.update_attributes(params[:albums])
       flash[:notice] = "Successfully updated albums."
       redirect_to @albums
@@ -36,7 +36,7 @@ class AlbumsController < ApplicationController
   end
   
   def destroy
-    @albums = Albums.find(params[:id])
+    @albums = Album.find(params[:id])
     @albums.destroy
     flash[:notice] = "Successfully destroyed albums."
     redirect_to albums_url
