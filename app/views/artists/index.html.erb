@@ -1,0 +1,17 @@
+<% title "Artists" %>
+
+<table>
+  <tr>
+    <th>Name</th>
+  </tr>
+  <% for artist in @artists %>
+    <tr>
+      <td><%=h artist.name %></td>
+      <td><%= link_to "Show", artist %></td>
+      <td><%= link_to "Edit", edit_artist_path(artist) %></td>
+      <td><%= link_to "Destroy", artist, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Artist", new_artist_path %></p>

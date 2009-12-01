@@ -1,0 +1,12 @@
+<% title "Artist" %>
+
+<p>
+  <strong>Name:</strong>
+  <%=h @artist.name %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_artist_path(@artist) %> |
+  <%= link_to "Destroy", @artist, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", artists_path %>
+</p>

@@ -1,0 +1,23 @@
+<% title "Albums" %>
+
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Year</th>
+    <th>Condition</th>
+    <th>Artist</th>
+  </tr>
+  <% for albums in @albums %>
+    <tr>
+      <td><%=h albums.title %></td>
+      <td><%=h albums.year %></td>
+      <td><%=h albums.condition %></td>
+      <td><%=h albums.artist_id %></td>
+      <td><%= link_to "Show", albums %></td>
+      <td><%= link_to "Edit", edit_albums_path(albums) %></td>
+      <td><%= link_to "Destroy", albums, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Albums", new_albums_path %></p>

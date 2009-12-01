@@ -1,0 +1,11 @@
+one:
+  title: MyString
+  year: 1
+  condition: MyString
+  artist_id: 1
+
+two:
+  title: MyString
+  year: 1
+  condition: MyString
+  artist_id: 1
