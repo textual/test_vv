@@ -6,3 +6,60 @@ Processing Rails::InfoController#properties (for 127.0.0.1 at 2009-12-01 11:32:4
  WHERE type = 'table' AND NOT name = 'sqlite_sequence'
 [0m
 Completed in 406ms (View: 47, DB: 0) | 200 OK [http://localhost/rails/info/properties]
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (62.5ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (125.0ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateArtists (20091201223931)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCREATE TABLE "artists" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20091201223931')[0m
+Migrating to CreateAlbums (20091201224035)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCREATE TABLE "albums" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "year" integer, "condition" varchar(255), "artist_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20091201224035')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("albums")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("artists")[0m
+
+
+Processing ArtistsController#index (for 127.0.0.1 at 2009-12-01 15:03:03) [GET]
+  [4;36;1mArtist Load (0.0ms)[0m   [0;1mSELECT * FROM "artists" [0m
+Rendering artists/index
+
+ActionView::TemplateError (undefined method `title' for #<ActionView::Base:0xf4b060>) on line #1 of app/views/artists/index.html.erb:
+1: <% title "Artists" %>
+2: 
+3: <table>
+4:   <tr>
+
+    app/views/artists/index.html.erb:1
+    <internal:prelude>:8:in `synchronize'
+    c:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+    c:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+    c:/Ruby19/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (93.8ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ArtistsController#index (for 127.0.0.1 at 2009-12-01 15:07:12) [GET]
+  [4;36;1mArtist Load (0.0ms)[0m   [0;1mSELECT * FROM "artists" [0m
+Rendering template within layouts/application
+Rendering artists/index
+Completed in 531ms (View: 375, DB: 0) | 200 OK [http://localhost/artists]
