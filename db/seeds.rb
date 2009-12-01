@@ -7,8 +7,26 @@
 #   Major.create(:name => 'Daley', :city => cities.first)
 
 
-Artist.create(:name => "Cascada")
+cascada = Artist.create(:name => "Cascada")
 Artist.create(:name => "Britney Spears")
-Artist.create(:name => "Wolfgang Amadeus Mozart")
+mozart = Artist.create(:name => "Wolfgang Amadeus Mozart")
 Artist.create(:name => "Elvis Presley")
 Artist.create(:name => "Aretha Franklin")
+
+Album.create!(:title => "Every Time We Touch", :year => 2006, :condition => "like new", :artist => cascada)
+Album.create!(:title => "Perfect Day", :year => 2007, :condition => "possessed", :artist => cascada)
+Album.create!(:title => "Evacuate the Dancefloor", :year => 2009, :artist => cascada)
+
+Album.create!(:title => "Sonata number 12", :year => 1745, :artist => mozart, :condition => "unknown")
+Album.create!(:title => "Sonata number 13", :year => 1746, :artist => mozart, :condition => "boring")
+Album.create!(:title => "Funky Time party", :year => 1749, :artist => mozart, :condition => "used")
+
+
+andrew = Artist.create!(:name => "Andrew")
+Album.create!(:title => "Andrew's rock opera", :year => 1973, :condition => "like new", :artist => andrew)
+Album.create!(:title => "Andrew's jazz fusion", :year => 1973, :condition => "dirty", :artist => andrew)
+Album.create!(:title => "Andrew's metal band", :year => 1985, :condition => "scratched", :artist => andrew)
+
+andrew = Artist.create!(:name => "Tim")
+Album.create!(:title => "Tim's punk rock album", :year => 1982, :condition => "like gnu", :artist => andrew)
+
