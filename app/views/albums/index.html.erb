@@ -14,10 +14,10 @@
       <td><%=h albums.condition %></td>
       <td><%=h albums.artist_id %></td>
       <td><%= link_to "Show", albums %></td>
-      <td><%= link_to "Edit", edit_albums_path(albums) %></td>
+      <td><%= link_to "Edit", edit_album_path(albums) %></td>
       <td><%= link_to "Destroy", albums, :confirm => 'Are you sure?', :method => :delete %></td>
     </tr>
   <% end %>
 </table>
 
-<p><%= link_to "New Albums", new_albums_path %></p>
+<p><%= link_to "New Albums", new_album_path %></p>
