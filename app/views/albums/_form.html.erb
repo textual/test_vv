@@ -10,7 +10,7 @@
   </p>
   <p>
     <%= f.label :condition %><br />
-    <%= f.text_field :condition %>
+    <%= f.select :condition, Album::ALBUM_CONDITIONS %>
   </p>
   <p>
     <%= f.label :artist_id %><br />

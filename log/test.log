@@ -1,0 +1,93 @@
+  [4;36;1mArtist Create (0.3ms)[0m   [0;1mINSERT INTO "artists" ("name", "created_at", "updated_at") VALUES('Muse', '2009-12-02 05:21:04', '2009-12-02 05:21:04')[0m
+  [4;35;1mAlbum Create (0.2ms)[0m   [0mINSERT INTO "albums" ("title", "year", "condition", "artist_id", "created_at", "updated_at") VALUES('The Resistance', 2009, 'mint', 980190963, '2009-12-02 05:21:04', '2009-12-02 05:21:04')[0m
+  [4;36;1mArtist Create (0.4ms)[0m   [0;1mINSERT INTO "artists" ("name", "created_at", "updated_at") VALUES('Muse', '2009-12-02 06:03:04', '2009-12-02 06:03:04')[0m
+  [4;35;1mAlbum Create (0.2ms)[0m   [0mINSERT INTO "albums" ("title", "year", "condition", "artist_id", "created_at", "updated_at") VALUES('The Resistance', 2009, 'mint', 980190963, '2009-12-02 06:03:04', '2009-12-02 06:03:04')[0m
+  [4;36;1mArtist Create (0.3ms)[0m   [0;1mINSERT INTO "artists" ("name", "created_at", "updated_at") VALUES('Muse', '2009-12-02 06:03:04', '2009-12-02 06:03:04')[0m
+  [4;35;1mAlbum Create (0.1ms)[0m   [0mINSERT INTO "albums" ("title", "year", "condition", "artist_id", "created_at", "updated_at") VALUES('The Resistance', 2009, 'mint', 980190963, '2009-12-02 06:03:04', '2009-12-02 06:03:04')[0m
+  [4;36;1mArtist Create (0.3ms)[0m   [0;1mINSERT INTO "artists" ("name", "created_at", "updated_at") VALUES('Muse', '2009-12-02 06:03:24', '2009-12-02 06:03:24')[0m
+  [4;35;1mAlbum Create (0.2ms)[0m   [0mINSERT INTO "albums" ("title", "year", "condition", "artist_id", "created_at", "updated_at") VALUES('The Resistance', 2009, 'mint', 980190963, '2009-12-02 06:03:24', '2009-12-02 06:03:24')[0m
+  [4;36;1mArtist Create (0.3ms)[0m   [0;1mINSERT INTO "artists" ("name", "created_at", "updated_at") VALUES('Muse', '2009-12-02 06:03:24', '2009-12-02 06:03:24')[0m
+  [4;35;1mAlbum Create (0.1ms)[0m   [0mINSERT INTO "albums" ("title", "year", "condition", "artist_id", "created_at", "updated_at") VALUES('The Resistance', 2009, 'mint', 980190963, '2009-12-02 06:03:24', '2009-12-02 06:03:24')[0m
+  [4;36;1mArtist Create (0.4ms)[0m   [0;1mINSERT INTO "artists" ("name", "created_at", "updated_at") VALUES('Muse', '2009-12-02 06:05:00', '2009-12-02 06:05:00')[0m
+  [4;35;1mAlbum Create (0.2ms)[0m   [0mINSERT INTO "albums" ("title", "year", "condition", "artist_id", "created_at", "updated_at") VALUES('The Resistance', 2009, 'mint', 980190963, '2009-12-02 06:05:00', '2009-12-02 06:05:00')[0m
+  [4;36;1mArtist Create (0.3ms)[0m   [0;1mINSERT INTO "artists" ("name", "created_at", "updated_at") VALUES('Muse', '2009-12-02 06:05:00', '2009-12-02 06:05:00')[0m
+  [4;35;1mAlbum Create (0.1ms)[0m   [0mINSERT INTO "albums" ("title", "year", "condition", "artist_id", "created_at", "updated_at") VALUES('The Resistance', 2009, 'mint', 980190963, '2009-12-02 06:05:00', '2009-12-02 06:05:00')[0m
+  [4;36;1mAlbum Load (0.2ms)[0m   [0;1mSELECT * FROM "albums" WHERE (condition = 'mint') [0m
+  [4;35;1mArtist Create (0.3ms)[0m   [0mINSERT INTO "artists" ("name", "created_at", "updated_at") VALUES('Muse', '2009-12-02 06:05:00', '2009-12-02 06:05:00')[0m
+  [4;36;1mAlbum Create (0.1ms)[0m   [0;1mINSERT INTO "albums" ("title", "year", "condition", "artist_id", "created_at", "updated_at") VALUES('The Resistance', 2009, 'mint', 980190963, '2009-12-02 06:05:00', '2009-12-02 06:05:00')[0m
+  [4;36;1mArtist Create (0.3ms)[0m   [0;1mINSERT INTO "artists" ("name", "created_at", "updated_at") VALUES('Muse', '2009-12-02 06:05:16', '2009-12-02 06:05:16')[0m
+  [4;35;1mAlbum Create (0.2ms)[0m   [0mINSERT INTO "albums" ("title", "year", "condition", "artist_id", "created_at", "updated_at") VALUES('The Resistance', 2009, 'mint', 980190963, '2009-12-02 06:05:16', '2009-12-02 06:05:16')[0m
+  [4;36;1mArtist Create (0.3ms)[0m   [0;1mINSERT INTO "artists" ("name", "created_at", "updated_at") VALUES('Muse', '2009-12-02 06:05:16', '2009-12-02 06:05:16')[0m
+  [4;35;1mAlbum Create (0.1ms)[0m   [0mINSERT INTO "albums" ("title", "year", "condition", "artist_id", "created_at", "updated_at") VALUES('The Resistance', 2009, 'mint', 980190963, '2009-12-02 06:05:16', '2009-12-02 06:05:16')[0m
+  [4;36;1mArtist Create (0.3ms)[0m   [0;1mINSERT INTO "artists" ("name", "created_at", "updated_at") VALUES('Muse', '2009-12-02 06:05:16', '2009-12-02 06:05:16')[0m
+  [4;35;1mAlbum Create (0.1ms)[0m   [0mINSERT INTO "albums" ("title", "year", "condition", "artist_id", "created_at", "updated_at") VALUES('The Resistance', 2009, 'mint', 980190963, '2009-12-02 06:05:16', '2009-12-02 06:05:16')[0m
+  [4;36;1mArtist Create (0.3ms)[0m   [0;1mINSERT INTO "artists" ("name", "created_at", "updated_at") VALUES('Muse', '2009-12-02 06:06:48', '2009-12-02 06:06:48')[0m
+  [4;35;1mAlbum Create (0.2ms)[0m   [0mINSERT INTO "albums" ("title", "year", "condition", "artist_id", "created_at", "updated_at") VALUES('The Resistance', 2009, 'mint', 980190963, '2009-12-02 06:06:48', '2009-12-02 06:06:48')[0m
+  [4;36;1mArtist Create (0.3ms)[0m   [0;1mINSERT INTO "artists" ("name", "created_at", "updated_at") VALUES('Muse', '2009-12-02 06:06:48', '2009-12-02 06:06:48')[0m
+  [4;35;1mAlbum Create (0.1ms)[0m   [0mINSERT INTO "albums" ("title", "year", "condition", "artist_id", "created_at", "updated_at") VALUES('The Resistance', 2009, 'mint', 980190963, '2009-12-02 06:06:48', '2009-12-02 06:06:48')[0m
+  [4;36;1mArtist Create (0.3ms)[0m   [0;1mINSERT INTO "artists" ("name", "created_at", "updated_at") VALUES('Muse', '2009-12-02 06:06:48', '2009-12-02 06:06:48')[0m
+  [4;35;1mAlbum Create (0.1ms)[0m   [0mINSERT INTO "albums" ("title", "year", "condition", "artist_id", "created_at", "updated_at") VALUES('The Resistance', 2009, 'mint', 980190963, '2009-12-02 06:06:48', '2009-12-02 06:06:48')[0m
+  [4;36;1mArtist Create (0.4ms)[0m   [0;1mINSERT INTO "artists" ("name", "created_at", "updated_at") VALUES('Muse', '2009-12-02 06:12:40', '2009-12-02 06:12:40')[0m
+  [4;35;1mAlbum Create (0.2ms)[0m   [0mINSERT INTO "albums" ("title", "year", "condition", "artist_id", "created_at", "updated_at") VALUES('The Resistance', 2009, 'mint', 980190963, '2009-12-02 06:12:40', '2009-12-02 06:12:40')[0m
+  [4;36;1mArtist Create (0.3ms)[0m   [0;1mINSERT INTO "artists" ("name", "created_at", "updated_at") VALUES('Muse', '2009-12-02 06:12:40', '2009-12-02 06:12:40')[0m
+  [4;35;1mAlbum Create (0.1ms)[0m   [0mINSERT INTO "albums" ("title", "year", "condition", "artist_id", "created_at", "updated_at") VALUES('The Resistance', 2009, 'mint', 980190963, '2009-12-02 06:12:40', '2009-12-02 06:12:40')[0m
+  [4;36;1mArtist Create (0.3ms)[0m   [0;1mINSERT INTO "artists" ("name", "created_at", "updated_at") VALUES('Muse', '2009-12-02 06:12:40', '2009-12-02 06:12:40')[0m
+  [4;35;1mAlbum Create (0.1ms)[0m   [0mINSERT INTO "albums" ("title", "year", "condition", "artist_id", "created_at", "updated_at") VALUES('The Resistance', 2009, 'mint', 980190963, '2009-12-02 06:12:40', '2009-12-02 06:12:40')[0m
+  [4;36;1mArtist Create (0.3ms)[0m   [0;1mINSERT INTO "artists" ("name", "created_at", "updated_at") VALUES('Muse', '2009-12-02 06:12:40', '2009-12-02 06:12:40')[0m
+  [4;35;1mAlbum Create (0.1ms)[0m   [0mINSERT INTO "albums" ("title", "year", "condition", "artist_id", "created_at", "updated_at") VALUES('The Resistance', 2009, 'mint', 980190963, '2009-12-02 06:12:40', '2009-12-02 06:12:40')[0m
+  [4;36;1mArtist Create (0.3ms)[0m   [0;1mINSERT INTO "artists" ("name", "created_at", "updated_at") VALUES('Muse', '2009-12-02 06:13:58', '2009-12-02 06:13:58')[0m
+  [4;35;1mAlbum Create (0.2ms)[0m   [0mINSERT INTO "albums" ("title", "year", "condition", "artist_id", "created_at", "updated_at") VALUES('The Resistance', 2009, 'mint', 980190963, '2009-12-02 06:13:58', '2009-12-02 06:13:58')[0m
+  [4;36;1mArtist Create (0.3ms)[0m   [0;1mINSERT INTO "artists" ("name", "created_at", "updated_at") VALUES('Muse', '2009-12-02 06:13:58', '2009-12-02 06:13:58')[0m
+  [4;35;1mAlbum Create (0.1ms)[0m   [0mINSERT INTO "albums" ("title", "year", "condition", "artist_id", "created_at", "updated_at") VALUES('The Resistance', 2009, 'mint', 980190963, '2009-12-02 06:13:58', '2009-12-02 06:13:58')[0m
+  [4;36;1mArtist Create (0.3ms)[0m   [0;1mINSERT INTO "artists" ("name", "created_at", "updated_at") VALUES('Muse', '2009-12-02 06:13:58', '2009-12-02 06:13:58')[0m
+  [4;35;1mAlbum Create (0.1ms)[0m   [0mINSERT INTO "albums" ("title", "year", "condition", "artist_id", "created_at", "updated_at") VALUES('The Resistance', 2009, 'mint', 980190963, '2009-12-02 06:13:58', '2009-12-02 06:13:58')[0m
+  [4;36;1mArtist Create (0.3ms)[0m   [0;1mINSERT INTO "artists" ("name", "created_at", "updated_at") VALUES('Muse', '2009-12-02 06:13:58', '2009-12-02 06:13:58')[0m
+  [4;35;1mAlbum Create (0.1ms)[0m   [0mINSERT INTO "albums" ("title", "year", "condition", "artist_id", "created_at", "updated_at") VALUES('The Resistance', 2009, 'mint', 980190963, '2009-12-02 06:13:58', '2009-12-02 06:13:58')[0m
+  [4;36;1mArtist Create (0.3ms)[0m   [0;1mINSERT INTO "artists" ("name", "created_at", "updated_at") VALUES('Muse', '2009-12-02 06:14:30', '2009-12-02 06:14:30')[0m
+  [4;35;1mAlbum Create (0.2ms)[0m   [0mINSERT INTO "albums" ("title", "year", "condition", "artist_id", "created_at", "updated_at") VALUES('The Resistance', 2009, 'mint', 980190963, '2009-12-02 06:14:30', '2009-12-02 06:14:30')[0m
+  [4;36;1mArtist Create (0.3ms)[0m   [0;1mINSERT INTO "artists" ("name", "created_at", "updated_at") VALUES('Muse', '2009-12-02 06:14:30', '2009-12-02 06:14:30')[0m
+  [4;35;1mAlbum Create (0.1ms)[0m   [0mINSERT INTO "albums" ("title", "year", "condition", "artist_id", "created_at", "updated_at") VALUES('The Resistance', 2009, 'mint', 980190963, '2009-12-02 06:14:30', '2009-12-02 06:14:30')[0m
+  [4;36;1mArtist Create (0.3ms)[0m   [0;1mINSERT INTO "artists" ("name", "created_at", "updated_at") VALUES('Muse', '2009-12-02 06:14:30', '2009-12-02 06:14:30')[0m
+  [4;35;1mAlbum Create (0.1ms)[0m   [0mINSERT INTO "albums" ("title", "year", "condition", "artist_id", "created_at", "updated_at") VALUES('The Resistance', 2009, 'mint', 980190963, '2009-12-02 06:14:30', '2009-12-02 06:14:30')[0m
+  [4;36;1mArtist Create (0.3ms)[0m   [0;1mINSERT INTO "artists" ("name", "created_at", "updated_at") VALUES('Muse', '2009-12-02 06:14:30', '2009-12-02 06:14:30')[0m
+  [4;35;1mAlbum Create (0.1ms)[0m   [0mINSERT INTO "albums" ("title", "year", "condition", "artist_id", "created_at", "updated_at") VALUES('The Resistance', 2009, 'mint', 980190963, '2009-12-02 06:14:30', '2009-12-02 06:14:30')[0m
+  [4;36;1mArtist Create (0.3ms)[0m   [0;1mINSERT INTO "artists" ("name", "created_at", "updated_at") VALUES('Muse', '2009-12-02 06:17:30', '2009-12-02 06:17:30')[0m
+  [4;35;1mAlbum Create (0.2ms)[0m   [0mINSERT INTO "albums" ("title", "year", "condition", "artist_id", "created_at", "updated_at") VALUES('The Resistance', 2009, 'mint', 980190963, '2009-12-02 06:17:30', '2009-12-02 06:17:30')[0m
+  [4;36;1mArtist Create (0.3ms)[0m   [0;1mINSERT INTO "artists" ("name", "created_at", "updated_at") VALUES('Muse', '2009-12-02 06:17:30', '2009-12-02 06:17:30')[0m
+  [4;35;1mAlbum Create (0.1ms)[0m   [0mINSERT INTO "albums" ("title", "year", "condition", "artist_id", "created_at", "updated_at") VALUES('The Resistance', 2009, 'mint', 980190963, '2009-12-02 06:17:30', '2009-12-02 06:17:30')[0m
+  [4;36;1mArtist Create (0.3ms)[0m   [0;1mINSERT INTO "artists" ("name", "created_at", "updated_at") VALUES('Muse', '2009-12-02 06:17:30', '2009-12-02 06:17:30')[0m
+  [4;35;1mAlbum Create (0.1ms)[0m   [0mINSERT INTO "albums" ("title", "year", "condition", "artist_id", "created_at", "updated_at") VALUES('The Resistance', 2009, 'mint', 980190963, '2009-12-02 06:17:30', '2009-12-02 06:17:30')[0m
+  [4;36;1mArtist Create (0.4ms)[0m   [0;1mINSERT INTO "artists" ("name", "created_at", "updated_at") VALUES('Muse', '2009-12-02 06:18:05', '2009-12-02 06:18:05')[0m
+  [4;35;1mAlbum Create (0.2ms)[0m   [0mINSERT INTO "albums" ("title", "year", "condition", "artist_id", "created_at", "updated_at") VALUES('The Resistance', 2009, 'mint', 980190963, '2009-12-02 06:18:05', '2009-12-02 06:18:05')[0m
+  [4;36;1mArtist Create (0.3ms)[0m   [0;1mINSERT INTO "artists" ("name", "created_at", "updated_at") VALUES('Muse', '2009-12-02 06:18:05', '2009-12-02 06:18:05')[0m
+  [4;35;1mAlbum Create (0.1ms)[0m   [0mINSERT INTO "albums" ("title", "year", "condition", "artist_id", "created_at", "updated_at") VALUES('The Resistance', 2009, 'mint', 980190963, '2009-12-02 06:18:05', '2009-12-02 06:18:05')[0m
+  [4;36;1mArtist Create (0.3ms)[0m   [0;1mINSERT INTO "artists" ("name", "created_at", "updated_at") VALUES('Muse', '2009-12-02 06:18:05', '2009-12-02 06:18:05')[0m
+  [4;35;1mAlbum Create (0.1ms)[0m   [0mINSERT INTO "albums" ("title", "year", "condition", "artist_id", "created_at", "updated_at") VALUES('The Resistance', 2009, 'mint', 980190963, '2009-12-02 06:18:05', '2009-12-02 06:18:05')[0m
+  [4;36;1mArtist Create (0.3ms)[0m   [0;1mINSERT INTO "artists" ("name", "created_at", "updated_at") VALUES('Muse', '2009-12-02 06:18:05', '2009-12-02 06:18:05')[0m
+  [4;35;1mAlbum Create (0.1ms)[0m   [0mINSERT INTO "albums" ("title", "year", "condition", "artist_id", "created_at", "updated_at") VALUES('The Resistance', 2009, 'mint', 980190963, '2009-12-02 06:18:05', '2009-12-02 06:18:05')[0m
+  [4;36;1mArtist Create (0.4ms)[0m   [0;1mINSERT INTO "artists" ("name", "created_at", "updated_at") VALUES('Muse', '2009-12-02 06:21:41', '2009-12-02 06:21:41')[0m
+  [4;35;1mAlbum Create (0.2ms)[0m   [0mINSERT INTO "albums" ("title", "year", "condition", "artist_id", "created_at", "updated_at") VALUES('The Resistance', 2009, 'mint', 980190963, '2009-12-02 06:21:41', '2009-12-02 06:21:41')[0m
+  [4;36;1mArtist Create (0.3ms)[0m   [0;1mINSERT INTO "artists" ("name", "created_at", "updated_at") VALUES('Muse', '2009-12-02 06:21:41', '2009-12-02 06:21:41')[0m
+  [4;35;1mAlbum Create (0.1ms)[0m   [0mINSERT INTO "albums" ("title", "year", "condition", "artist_id", "created_at", "updated_at") VALUES('The Resistance', 2009, 'mint', 980190963, '2009-12-02 06:21:41', '2009-12-02 06:21:41')[0m
+  [4;36;1mArtist Create (0.3ms)[0m   [0;1mINSERT INTO "artists" ("name", "created_at", "updated_at") VALUES('Muse', '2009-12-02 06:21:41', '2009-12-02 06:21:41')[0m
+  [4;35;1mAlbum Create (0.1ms)[0m   [0mINSERT INTO "albums" ("title", "year", "condition", "artist_id", "created_at", "updated_at") VALUES('The Resistance', 2009, 'mint', 980190963, '2009-12-02 06:21:41', '2009-12-02 06:21:41')[0m
+  [4;36;1mArtist Create (0.3ms)[0m   [0;1mINSERT INTO "artists" ("name", "created_at", "updated_at") VALUES('Muse', '2009-12-02 06:21:41', '2009-12-02 06:21:41')[0m
+  [4;35;1mAlbum Create (0.1ms)[0m   [0mINSERT INTO "albums" ("title", "year", "condition", "artist_id", "created_at", "updated_at") VALUES('The Resistance', 2009, 'mint', 980190963, '2009-12-02 06:21:41', '2009-12-02 06:21:41')[0m
+  [4;36;1mArtist Create (0.7ms)[0m   [0;1mINSERT INTO "artists" ("name", "created_at", "updated_at") VALUES('Radiohead', '2009-12-02 16:20:10', '2009-12-02 16:20:10')[0m
+  [4;35;1mAlbum Create (0.2ms)[0m   [0mINSERT INTO "albums" ("title", "year", "condition", "artist_id", "created_at", "updated_at") VALUES('The Resistance', 2009, 'mint', 1, '2009-12-02 16:20:10', '2009-12-02 16:20:10')[0m
+  [4;36;1mArtist Create (0.2ms)[0m   [0;1mINSERT INTO "artists" ("name", "created_at", "updated_at") VALUES('Radiohead', '2009-12-02 16:20:10', '2009-12-02 16:20:10')[0m
+  [4;35;1mAlbum Create (0.1ms)[0m   [0mINSERT INTO "albums" ("title", "year", "condition", "artist_id", "created_at", "updated_at") VALUES('The Resistance', 2009, 'mint', 1, '2009-12-02 16:20:10', '2009-12-02 16:20:10')[0m
+  [4;36;1mArtist Create (0.2ms)[0m   [0;1mINSERT INTO "artists" ("name", "created_at", "updated_at") VALUES('Radiohead', '2009-12-02 16:20:10', '2009-12-02 16:20:10')[0m
+  [4;35;1mAlbum Create (0.1ms)[0m   [0mINSERT INTO "albums" ("title", "year", "condition", "artist_id", "created_at", "updated_at") VALUES('The Resistance', 2009, 'mint', 1, '2009-12-02 16:20:10', '2009-12-02 16:20:10')[0m
+  [4;36;1mArtist Create (0.2ms)[0m   [0;1mINSERT INTO "artists" ("name", "created_at", "updated_at") VALUES('Radiohead', '2009-12-02 16:20:10', '2009-12-02 16:20:10')[0m
+  [4;35;1mAlbum Create (0.1ms)[0m   [0mINSERT INTO "albums" ("title", "year", "condition", "artist_id", "created_at", "updated_at") VALUES('The Resistance', 2009, 'mint', 1, '2009-12-02 16:20:10', '2009-12-02 16:20:10')[0m
+  [4;36;1mArtist Create (0.2ms)[0m   [0;1mINSERT INTO "artists" ("name", "created_at", "updated_at") VALUES('Radiohead', '2009-12-02 16:20:10', '2009-12-02 16:20:10')[0m
+  [4;35;1mAlbum Create (0.1ms)[0m   [0mINSERT INTO "albums" ("title", "year", "condition", "artist_id", "created_at", "updated_at") VALUES('The Resistance', 2009, 'mint', 1, '2009-12-02 16:20:10', '2009-12-02 16:20:10')[0m
+  [4;36;1mArtist Create (0.2ms)[0m   [0;1mINSERT INTO "artists" ("name", "created_at", "updated_at") VALUES('Radiohead', '2009-12-02 16:20:10', '2009-12-02 16:20:10')[0m
+  [4;35;1mAlbum Create (0.1ms)[0m   [0mINSERT INTO "albums" ("title", "year", "condition", "artist_id", "created_at", "updated_at") VALUES('The Resistance', 2009, 'mint', 1, '2009-12-02 16:20:10', '2009-12-02 16:20:10')[0m
+  [4;36;1mArtist Create (0.2ms)[0m   [0;1mINSERT INTO "artists" ("name", "created_at", "updated_at") VALUES('Radiohead', '2009-12-02 16:20:10', '2009-12-02 16:20:10')[0m
+  [4;35;1mAlbum Create (0.1ms)[0m   [0mINSERT INTO "albums" ("title", "year", "condition", "artist_id", "created_at", "updated_at") VALUES('The Resistance', 2009, 'mint', 1, '2009-12-02 16:20:10', '2009-12-02 16:20:10')[0m
+  [4;36;1mArtist Create (0.2ms)[0m   [0;1mINSERT INTO "artists" ("name", "created_at", "updated_at") VALUES('Radiohead', '2009-12-02 16:20:10', '2009-12-02 16:20:10')[0m
+  [4;35;1mAlbum Load (0.8ms)[0m   [0mSELECT * FROM "albums" WHERE ("albums".artist_id = 1) ORDER BY year LIMIT 1[0m
+  [4;36;1mArtist Create (0.3ms)[0m   [0;1mINSERT INTO "artists" ("name", "created_at", "updated_at") VALUES('Radiohead', '2009-12-02 16:20:10', '2009-12-02 16:20:10')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "albums" WHERE ("albums".artist_id = 1) [0m
