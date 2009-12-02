@@ -23,6 +23,7 @@ class AlbumsController < ApplicationController
   
   def edit
     @album = Album.find(params[:id])
+    @album.tracks.build if @album.tracks.empty?
   end
   
   def update

@@ -20,9 +20,13 @@
     <%= f.file_field :image %>
   </p>
   <p>
-    <%= f.fields_for(:tracks) do |track_form| %>
-    <%= track_form.text_field :name %>
-    <%= track_form.file_field :audio %>
+    <% f.fields_for(:tracks) do |track_form| %>
+      <%= track_form.label :name %>
+      <%= track_form.text_field :name %>
+    <br />
+      <%= track_form.label :audio, "Select music file:" %>
+      <%= track_form.file_field :audio %>
+    <% end %>
   </p>
   <p><%= f.submit "Submit" %></p>
 <% end %>
