@@ -3,6 +3,8 @@ class Album < ActiveRecord::Base
   belongs_to  :artist
   has_many :tracks
   has_attached_file :image #, :styles => {:medium => "300x300>", :thumb => "100x100>"}
+
+  accepts_nested_attributes_for :tracks
   
   ALBUM_CONDITIONS = ["mint", "good", "average", "poor"]
   DEFAULT_IMAGE_URL = "music_clipart/1.jpg"

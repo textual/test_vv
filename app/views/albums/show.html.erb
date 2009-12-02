@@ -1,6 +1,17 @@
+
+<%# content_for :head do %>
+  <script type="text/javascript" src="/javascripts/jquery.js"></script>
+  <script type="text/javascript" src="/javascripts/thickbox.js"></script>
+  <style type="text/css" media="all">@import "/stylesheets/thickbox.css";</style>
+<%# end %>
+
 <% title h(@album.title) %>
 
-<%= image_tag @album.display_image_url, style:"float:left;", width:"150", height:"150" %>
+<% img_location = @album.display_image_url %>
+<a href="<%= img_location %>" class='thickbox'>
+  
+<%= image_tag img_location, style:"float:left;", width:"150", height:"150" %>
+</a>
 
 <div style="float:left;margin-left:3em;">
   <p>
