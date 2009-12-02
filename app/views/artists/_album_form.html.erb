@@ -1,9 +1,9 @@
-<%= id = "row_#{ Time.now.to_i }" %>
+<% id = "row_#{ Time.now.to_i }" %>
 
 <tr id="<%= id %>">
     <td><%= album_form.text_field :title %></td>
     <td><%= album_form.text_field :year %></td>
-    <td><%= album_form.select :condition, Album::ALBUM_CONDITIONS %></td>
+    <td><%= album_form.select :condition, Album::ALBUM_CONDITIONS, :include_blank => "select" %></td>
     <td>
       <%= album_form.hidden_field :_destroy, :id => "destroy_#{id}" %>
       <%= link_to_function "Remove", "document.getElementById('#{id}').style.display = 'none'; document.getElementById('destroy_#{id}').value = 1" %>

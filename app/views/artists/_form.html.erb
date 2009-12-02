@@ -5,7 +5,7 @@
     <%= f.text_field :name %>
   </p>
   
-  <table class="list_table">
+  <table id="albums" class="list_table">
     <tr>
       <th>Album</th>
       <th>Year</th>
@@ -16,5 +16,7 @@
     <% end %>
   </table>
   
+	<%= button_to_add_an_album(f) %>
+
   <p><%= f.submit "Submit" %></p>
 <% end %>
