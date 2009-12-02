@@ -1,4 +1,4 @@
-<% id = "row_#{ Time.now.to_i }" %>
+<% id ||= "_INDEX_" %>
 
 <tr id="<%= id %>">
     <td><%= album_form.text_field :title %></td>
