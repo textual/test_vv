@@ -1,4 +1,4 @@
-require 'test_helper'
+require File.expand_path('../test_helper', File.dirname(__FILE__))
 
 class ArtistTest < ActiveSupport::TestCase
   
@@ -8,6 +8,16 @@ class ArtistTest < ActiveSupport::TestCase
 
   def test_should_be_valid
     assert Artist.new.valid?
+  end
+
+  def test_nested_attributes
+    andrew = Artist.new(:name => 'andrew')
+    andrew.albums_attributes = {0 => {:title => 'a', :year => 1978, :condition => 'mint'}}
+
+    album = andrew.albums.first
+    assert_equal 'a', album.title
+    assert_equal 1978, album.year
+    assert_equal 'mint', album.condition
   end
 
 
