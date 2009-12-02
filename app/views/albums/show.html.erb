@@ -1,6 +1,6 @@
 <% title h(@album.title) %>
 
-<img  style="float:left;" src="/images/music_clipart/1.jpg" width="150" height="150">
+<%= image_tag @album.display_image_url, style:"float:left;", width:"150", height:"150" %>
 
 <div style="float:left;margin-left:3em;">
   <p>
