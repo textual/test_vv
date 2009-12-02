@@ -39,3 +39,12 @@ end
                          :condition =>  %w[mint good average poor][rand(4)],
                          :artist => artists[rand(artists.size)])
 end
+
+Album.all.each do |album|
+  file = "#{rand(18)+1}.jpg"
+  album.image_file_name = file
+  album.image_content_type = 'image/jpeg'
+  `mkdir -p public/system/images/#{album.id}/original`
+  `cp public/images/music_clipart/#{file} public/system/images/#{album.id}/original`
+  album.save!
+end
