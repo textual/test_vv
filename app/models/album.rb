@@ -1,6 +1,8 @@
 class Album < ActiveRecord::Base
   
   belongs_to  :artist
+  has_many :tracks
+  has_attached_file :image #, :styles => {:medium => "300x300>", :thumb => "100x100>"}
   
   ALBUM_CONDITIONS = ["mint", "good", "average", "poor"]
   
