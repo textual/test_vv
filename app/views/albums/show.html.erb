@@ -1,6 +1,16 @@
+
+<%# content_for :head do %>
+  <script type="text/javascript" src="/javascripts/jquery.js"></script>
+  <script type="text/javascript" src="/javascripts/thickbox.js"></script>
+  <style type="text/css" media="all">@import "/stylesheets/thickbox.css";</style>
+<%# end %>
+
+
 <% title h(@album.title) %>
 
+<a href="<%= @album.image.url %>" class='thickbox'>
 <%= image_tag @album.image.url %>
+</a>
 
 <div>
   <p>
