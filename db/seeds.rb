@@ -6,7 +6,6 @@
 #   cities = City.create([{ :name => 'Chicago' }, { :name => 'Copenhagen' }])
 #   Major.create(:name => 'Daley', :city => cities.first)
 
-
 cascada = Artist.create(:name => "Cascada")
 Artist.create(:name => "Britney Spears")
 mozart = Artist.create(:name => "Wolfgang Amadeus Mozart")
@@ -30,3 +29,13 @@ Album.create!(:title => "Andrew's metal band", :year => 1985, :condition => "ave
 andrew = Artist.create!(:name => "Tim")
 Album.create!(:title => "Tim's punk rock album", :year => 1982, :condition => "mint", :artist_id => andrew.id)
 
+artists = (1..5).map do
+  Artist.create!(:name => Faker::Name.name)
+end
+
+15.times do
+  Album.create!(:title => Faker::Company.bs.titleize, 
+                         :year => 1999 + rand(10),
+                         :condition =>  %w[mint good average poor][rand(4)],
+                         :artist => artists[rand(artists.size)])
+end

@@ -20,6 +20,13 @@ class ArtistTest < ActiveSupport::TestCase
     assert_equal 'mint', album.condition
   end
 
+  def test_nested_attributes__empties_removed
+    andrew = Artist.new(:name => 'andrew')
+    andrew.albums_attributes = {0 => {:title => 'a', :year => 1978, :condition => 'mint'}, 1 => {}}
+
+    assert_equal 1, andrew.albums.size
+  end
+
 
 
   context "An Artist instance without an album" do
