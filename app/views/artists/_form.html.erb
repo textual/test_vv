@@ -12,7 +12,7 @@
       <th>Condition</th>
     </tr>
     <% f.fields_for(:albums) do |album_form| %>
-			<%= render :partial => "album_form", :locals => {:album_form => album_form} %>
+      <%= render :partial => 'album_form', :locals => {:album_form => album_form} %>
     <% end %>
   </table>
   

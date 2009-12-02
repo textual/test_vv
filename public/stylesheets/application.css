@@ -1,6 +1,6 @@
 body {
   background-color: #4B7399;
-  font-family: Verdana, Helvetica, Arial;
+  font-family: Helvetica, Arial;
   font-size: 14px;
 }
 
@@ -95,4 +95,10 @@ a {
 #errorExplanation ul li {
   font-size: 12px;
   list-style: disc;
+}
+
+/*  CUSTOM STYLES */
+
+th {
+  text-align: left
 }
