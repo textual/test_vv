@@ -2,12 +2,14 @@
 
 <table class='list_table'>
   <tr>
+    <th>Cover Art</th>
     <th>Album</th>
     <th>Year</th>
     <th>Condition</th>
   </tr>
   <% for album in @artist.albums %>
     <tr>
+      <td><img src="/images/music_clipart/1.jpg" width="80" height="50"></td>
       <td><%= link_to h(album.title), album %></td>
       <td><%=h album.year %></td>
       <td><%=h album.condition  %></td>

@@ -8,23 +8,28 @@
 
 <% title h(@album.title) %>
 
-<a class="thickbox" href="http://www.google.com/intl/en_ALL/images/logo.gif"><img src="http://www.google.com/intl/en_ALL/images/logo.gif" /></a>
+<% img_location = "/images/music_clipart/1.jpg" %>
+<a href="<%= img_location %>" class='thickbox'>
+<img style="float:left;" src="<%= img_location %>" width="150" height="150">
 
-<p>
-  <strong>Year:</strong>
-  <%=h @album.year %>
-</p>
-<p>
-  <strong>Condition:</strong>
-  <%=h @album.condition %>
-</p>
-<p>
-  <strong>Artist:</strong>
-  <%= artist_link(@album.artist) %>
-</p>
+<div style="float:left;margin-left:3em;">
+  <p>
+    <strong>Year:</strong>
+    <%=h @album.year %>
+  </p>
+  <p>
+    <strong>Condition:</strong>
+    <%=h @album.condition %>
+  </p>
+  <p>
+    <strong>Artist:</strong>
+    <%= artist_link(@album.artist) %>
+  </p>
 
-<p>
-  <%= link_to "Edit", edit_album_path(@album) %> |
-  <%= link_to "Destroy", @album, :confirm => 'Are you sure?', :method => :delete %> |
-  <%= link_to "View All", albums_path %>
-</p>
+  <p>
+    <%= link_to "Edit", edit_album_path(@album) %> |
+    <%= link_to "Destroy", @album, :confirm => 'Are you sure?', :method => :delete %> |
+    <%= link_to "View All", albums_path %>
+  </p>
+</div>
+<div style="clear:both;">
