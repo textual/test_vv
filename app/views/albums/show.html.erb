@@ -13,7 +13,14 @@
 <%= image_tag img_location, style:"float:left;", width:"150", height:"150" %>
 </a>
 
-<div style="float:left;margin-left:3em;">
+<div>
+	<p>
+		<% unless @album.tracks.empty? %>
+			<embed type="application/x-shockwave-flash" src="http://www.google.com/reader/ui/3247397568-audio-player.swf?audioUrl=<%= @album.tracks.first.audio.url %>" width="400" height="27" allowscriptaccess="never" quality="best" bgcolor="#ffffff" wmode="window" flashvars="playerMode=embedded" />
+		<% else %>
+			This album doesn´t have any tracks
+		<% end %>
+	</p>
   <p>
     <strong>Year:</strong>
     <%=h @album.year %>
