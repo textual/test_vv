@@ -4,5 +4,21 @@
     <%= f.label :name %><br />
     <%= f.text_field :name %>
   </p>
+  
+  <table class="list_table">
+    <tr>
+      <th>Album</th>
+      <th>Year</th>
+      <th>Condition</th>
+    </tr>
+    <% f.fields_for(:albums) do |album_form| %>
+      <tr>
+          <td><%= album_form.text_field :title %></td>
+          <td><%= album_form.text_field :year %></td>
+          <td><%= album_form.select :condition, Album::ALBUM_CONDITIONS %></td> 
+      </tr>
+    <% end %>
+  </table>
+  
   <p><%= f.submit "Submit" %></p>
 <% end %>
