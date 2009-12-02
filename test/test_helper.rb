@@ -1,8 +1,11 @@
 ENV["RAILS_ENV"] = "test"
 require File.expand_path(File.dirname(__FILE__) + "/../config/environment")
 require 'test_help'
+require 'factory_girl'
+require 'faker'
 
 class ActiveSupport::TestCase
+  
   # Transactional fixtures accelerate your tests by wrapping each test method
   # in a transaction that's rolled back on completion.  This ensures that the
   # test database remains unchanged so your fixtures don't have to be reloaded
@@ -35,4 +38,16 @@ class ActiveSupport::TestCase
   fixtures :all
 
   # Add more helper methods to be used by all tests here...
+  
+  Factory.define :artist do |a|
+    a.name Faker::Name.name
+  end
+  
+  Factory.define :album do |a|
+    a.title  Faker::Company.bs.titleize
+    a.year  1999 + rand(10)
+    a.condition  %w[mint good average poor][rand(4)]
+    a.artist{|artist| artist.association(:artist)}
+  end
+  
 end
