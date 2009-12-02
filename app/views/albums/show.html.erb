@@ -1,20 +1,25 @@
 <% title h(@album.title) %>
 
-<p>
-  <strong>Year:</strong>
-  <%=h @album.year %>
-</p>
-<p>
-  <strong>Condition:</strong>
-  <%=h @album.condition %>
-</p>
-<p>
-  <strong>Artist:</strong>
-  <%= artist_link(@album.artist) %>
-</p>
+<img  style="float:left;" src="/images/music_clipart/1.jpg" width="150" height="150">
 
-<p>
-  <%= link_to "Edit", edit_album_path(@album) %> |
-  <%= link_to "Destroy", @album, :confirm => 'Are you sure?', :method => :delete %> |
-  <%= link_to "View All", albums_path %>
-</p>
+<div style="float:left;margin-left:3em;">
+  <p>
+    <strong>Year:</strong>
+    <%=h @album.year %>
+  </p>
+  <p>
+    <strong>Condition:</strong>
+    <%=h @album.condition %>
+  </p>
+  <p>
+    <strong>Artist:</strong>
+    <%= artist_link(@album.artist) %>
+  </p>
+
+  <p>
+    <%= link_to "Edit", edit_album_path(@album) %> |
+    <%= link_to "Destroy", @album, :confirm => 'Are you sure?', :method => :delete %> |
+    <%= link_to "View All", albums_path %>
+  </p>
+</div>
+<div style="clear:both;">
