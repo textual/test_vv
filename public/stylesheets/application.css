@@ -27,6 +27,23 @@ a {
   margin-top: 20px;
 }
 
+.list_table td,  .list_table th {
+  padding: .6em 1em;
+}
+
+.list_table tr:first-child {
+  background-color: #EEE;
+}
+
+.list_table th {
+  border: solid 2px #DDD;
+}
+
+.list_table {
+  border-collapse:collapse;
+}
+
+
 #flash_notice, #flash_error {
   padding: 5px 8px;
   margin: 10px 0;
