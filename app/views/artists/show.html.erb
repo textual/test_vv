@@ -9,7 +9,7 @@
   </tr>
   <% for album in @artist.albums %>
     <tr>
-      <td><%= image_tag album.image.url %></td>
+      <td><%= image_tag album.display_image_url, width:"80", height:"50" %></td>
       <td><%= link_to h(album.title), album %></td>
       <td><%=h album.year %></td>
       <td><%=h album.condition  %></td>
