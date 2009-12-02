@@ -1,24 +1,24 @@
-<% title "Albums" %>
+<% title h @album.title %>
 
 <p>
   <strong>Title:</strong>
-  <%=h @albums.title %>
+  <%=h @album.title %>
 </p>
 <p>
   <strong>Year:</strong>
-  <%=h @albums.year %>
+  <%=h @album.year %>
 </p>
 <p>
   <strong>Condition:</strong>
-  <%=h @albums.condition %>
+  <%=h @album.condition %>
 </p>
 <p>
   <strong>Artist:</strong>
-  <%=h @albums.artist_id %>
+  <%= artist_link(@album.artist) %>
 </p>
 
 <p>
-  <%= link_to "Edit", edit_album_path(@albums) %> |
-  <%= link_to "Destroy", @albums, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "Edit", edit_album_path(@album) %> |
+  <%= link_to "Destroy", @album, :confirm => 'Are you sure?', :method => :delete %> |
   <%= link_to "View All", albums_path %>
 </p>

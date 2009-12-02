@@ -9,17 +9,17 @@
     <th>Actions</th>
     
   </tr>
-  <% for albums in @albums %>
+  <% for album in @albums %>
     <tr>
-      <td><%=h albums.title %></td>
-      <td><%=h albums.year %></td>
-      <td><%=h albums.condition %></td>
-      <td><%=h albums.artist_id %></td>
-      <td><%= link_to "Show", albums %> | 
-          <%= link_to "Edit", edit_album_path(albums) %> | 
-          <%= link_to "Destroy", albums, :confirm => 'Are you sure?', :method => :delete %></td>
+      <td><%=h album.title %></td>
+      <td><%=h album.year %></td>
+      <td><%=h album.condition %></td>
+      <td><%= artist_link album.artist %></td>
+      <td><%= link_to "Show", album %> | 
+          <%= link_to "Edit", edit_album_path(album) %> | 
+          <%= link_to "Destroy", album, :confirm => 'Are you sure?', :method => :delete %></td>
     </tr>
   <% end %>
 </table>
 
-<p><%= link_to "New Albums", new_album_path %></p>
+<p><%= link_to "New Album", new_album_path %></p>

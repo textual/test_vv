@@ -1,8 +1,8 @@
-<% title "Edit Albums" %>
+<% title "Edit #{h @album.title}" %>
 
 <%= render :partial => 'form' %>
 
 <p>
-  <%= link_to "Show", @albums %> |
+  <%= link_to "Show", @album %> |
   <%= link_to "View All", albums_path %>
 </p>
