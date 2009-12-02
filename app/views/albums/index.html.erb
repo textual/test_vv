@@ -11,12 +11,11 @@
   </tr>
   <% for album in @albums %>
     <tr>
-      <td><%=h album.title %></td>
+      <td><%= album_link(album) %></td>
       <td><%=h album.year %></td>
       <td><%=h album.condition %></td>
       <td><%= artist_link album.artist %></td>
-      <td><%= link_to "Show", album %> | 
-          <%= link_to "Edit", edit_album_path(album) %> | 
+      <td><%= link_to "Edit", edit_album_path(album) %> | 
           <%= link_to "Destroy", album, :confirm => 'Are you sure?', :method => :delete %></td>
     </tr>
   <% end %>

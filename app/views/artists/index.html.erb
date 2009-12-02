@@ -1,15 +1,17 @@
 <% title "Artists" %>
 
-<table>
+<table class='list_table'>
   <tr>
     <th>Name</th>
+    <th>Actions</th>
   </tr>
   <% for artist in @artists %>
     <tr>
-      <td><%=h artist.name %></td>
-      <td><%= link_to "Show", artist %></td>
-      <td><%= link_to "Edit", edit_artist_path(artist) %></td>
-      <td><%= link_to "Destroy", artist, :confirm => 'Are you sure?', :method => :delete %></td>
+      <td><%= artist_link(artist) %></td>
+      <td>
+        <%= link_to "Edit", edit_artist_path(artist) %> | 
+        <%= link_to "Destroy", artist, :confirm => 'Are you sure?', :method => :delete %>
+      </td>
     </tr>
   <% end %>
 </table>
