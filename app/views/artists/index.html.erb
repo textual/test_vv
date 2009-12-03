@@ -9,11 +9,11 @@
     <tr>
       <td><%= artist_link(artist) %></td>
       <td>
-        <%= link_to "Edit", edit_artist_path(artist) %> | 
-        <%= link_to "Destroy", artist, :confirm => 'Are you sure?', :method => :delete %>
+        <%= link_to icon("Modify"), edit_artist_path(artist) %> 
+        <%= link_to icon("Delete"), artist, :confirm => 'Are you sure?', :method => :delete %>
       </td>
     </tr>
   <% end %>
 </table>
 
-<p><%= link_to "New Artist", new_artist_path %></p>
+<p><%= link_to icon("Add"), new_artist_path %></p>

@@ -28,5 +28,12 @@
       <%= track_form.file_field :audio %>
     <% end %>
   </p>
-  <p><%= f.submit "Submit" %></p>
+  <p>
+    
+    
+    <%= link_to icon("Search"), albums_path %>
+    <%= link_to(icon("Back"), @album) %>
+    <%= f.submit "Submit", :class => "save", :value => "" %>
+    
+  </p>
 <% end %>

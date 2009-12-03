@@ -7,20 +7,20 @@
     <th>Year</th>
     <th>Condition</th>
     <th>Artist</th>
-    <th>Actions</th>
+    <th></th>
     
   </tr>
   <% for album in @albums %>
     <tr>
-      <td><%= image_tag album.display_image_url, width:"80", height:"50" %></td>
+      <td><%= link_to image_tag(album.display_image_url, width:"80", height:"50"), album %></td>
       <td><%= album_link(album) %></td>
       <td><%=h album.year %></td>
       <td><%=h album.condition %></td>
       <td><%= artist_link album.artist %></td>
-      <td><%= link_to "Edit", edit_album_path(album) %> | 
-          <%= link_to "Destroy", album, :confirm => 'Are you sure?', :method => :delete %></td>
+      <td><%= link_to icon("modify"), edit_album_path(album) %>
+          <%= link_to icon("delete"), album, :confirm => 'Are you sure?', :method => :delete %></td>
     </tr>
   <% end %>
 </table>
 
-<p><%= link_to "New Album", new_album_path %></p>
+<p><%= link_to icon("Add"), new_album_path %></p>

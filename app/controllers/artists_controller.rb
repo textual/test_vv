@@ -9,6 +9,7 @@ class ArtistsController < ApplicationController
   
   def new
     @artist = Artist.new
+    @artist.albums.build
   end
   
   def create
@@ -23,6 +24,7 @@ class ArtistsController < ApplicationController
   
   def edit
     @artist = Artist.find(params[:id])
+    @artist.albums.build if @artist.albums.empty?
   end
   
   def update

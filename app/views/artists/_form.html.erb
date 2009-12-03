@@ -10,6 +10,7 @@
       <th>Album</th>
       <th>Year</th>
       <th>Condition</th>
+      <th></th>
     </tr>
     <% f.fields_for(:albums) do |album_form| %>
       <%= render :partial => 'album_form', :locals => {:album_form => album_form, :id => rand(1000000000000)} %>
@@ -17,6 +18,9 @@
   </table>
   
 	<%= button_to_add_an_album(f) %>
-
-  <p><%= f.submit "Submit" %></p>
+  <p>
+    <%= link_to icon("Search"), artists_path %>
+    <%= link_to(icon("Back"), @artist) %>
+    <%= f.submit "Submit", :class => "save", :value => "" %>
+  </p>
 <% end %>

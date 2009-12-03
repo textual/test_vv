@@ -35,9 +35,9 @@
   </p>
 
   <p>
-    <%= link_to "Edit", edit_album_path(@album) %> |
-    <%= link_to "Destroy", @album, :confirm => 'Are you sure?', :method => :delete %> |
-    <%= link_to "View All", albums_path %>
+    <%= link_to icon("Search"), albums_path %>
+    <%= link_to icon("modify"), edit_album_path(@album) %>
+    <%= link_to icon("delete"), @album, :confirm => 'Are you sure?', :method => :delete %></td>
   </p>
 </div>
 <div style="clear:both;">

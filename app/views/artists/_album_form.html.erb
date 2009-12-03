@@ -6,5 +6,5 @@
     <td><%= album_form.select :condition, Album::ALBUM_CONDITIONS, :include_blank => "" %></td>
     <td>
       <%= album_form.hidden_field :_destroy, :id => "destroy_#{id}" %>
-      <%= link_to_function "Remove", "document.getElementById('#{id}').style.display = 'none'; document.getElementById('destroy_#{id}').value = 1" %>
+      <%= link_to_function icon("Delete"), "document.getElementById('#{id}').style.display = 'none'; document.getElementById('destroy_#{id}').value = 1" %>
 </tr>

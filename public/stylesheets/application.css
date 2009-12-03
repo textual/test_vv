@@ -39,22 +39,39 @@ a {
   border: solid 2px #DDD;
 }
 
+.list_table tr {
+  border-bottom: solid 1px #E8E8E8;
+}
+
 .list_table {
   border-collapse:collapse;
 }
 
+input.save {
+  width: 48px;
+  height: 48px; 
+  background-image: url(/images/webappers/Save.png);
+  position: relative;
+  top: -21px;
+}
+
 
 #flash_notice, #flash_error {
-  padding: 5px 8px;
+  min-height: 28px; 
+  background-repeat:no-repeat;
+  padding:10px 10px 10px 50px; 
+  font-size:1.2em;
   margin: 10px 0;
 }
 
 #flash_notice {
+  background-image: url(/images/webappers/Info.png);
   background-color: #CFC;
   border: solid 1px #6C6;
 }
 
 #flash_error {
+  background-image: url(/images/webappers/Warning.png);
   background-color: #FCC;
   border: solid 1px #C66;
 }

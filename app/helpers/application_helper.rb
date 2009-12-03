@@ -8,4 +8,8 @@ module ApplicationHelper
   def album_link(album)
     album ? link_to(h(album.title), album) : "--"
   end
+  
+  def icon(type)
+    image_tag "webappers/#{type.titleize}.png", :alt => type
+  end
 end
