@@ -6,7 +6,7 @@ class Album < ActiveRecord::Base
   accepts_nested_attributes_for :tracks
   
   ALBUM_CONDITIONS = ["mint", "good", "average", "poor"]
-  DEFAULT_IMAGE_URL = "default.gif"
+  DEFAULT_IMAGE_URL = "music_clipart/1.jpg"
   
   validates_presence_of :title, :year, :condition
   validates_inclusion_of :condition, :in => ALBUM_CONDITIONS, :message => "{{value}} is not valid", :allow_blank => true
@@ -16,6 +16,10 @@ class Album < ActiveRecord::Base
   
   def display_image_url
     image_file_name.present? ? image.url : DEFAULT_IMAGE_URL
+  end
+  
+  def before_save
+    self.price = Pricing.request(self.title, self.artist.name).first['price']
   end
   
 end

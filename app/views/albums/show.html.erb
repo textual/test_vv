@@ -34,6 +34,11 @@
     <%= artist_link(@album.artist) %>
   </p>
 
+	<p>
+		<strong>Price:</strong>
+		<%= number_to_currency(@album.price) if @album.price %>
+	</p>
+
   <p>
     <%= link_to icon("Search"), albums_path %>
     <%= link_to icon("modify"), edit_album_path(@album) %>
